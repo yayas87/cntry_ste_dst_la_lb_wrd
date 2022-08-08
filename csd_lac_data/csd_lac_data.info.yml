@@ -1,0 +1,11 @@
+name: CSD 04 LAC Data
+type: module
+description: 'Import LAC data.'
+package: AAP
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - cntry_ste_dst_la_lb_wrd
+  - cntry_ste_dst_la_lb_wrd:csd_country_data
+  - cntry_ste_dst_la_lb_wrd:csd_state_data
+  - cntry_ste_dst_la_lb_wrd:csd_district_data

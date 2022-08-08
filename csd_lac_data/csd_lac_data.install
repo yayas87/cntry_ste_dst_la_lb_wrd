@@ -1,0 +1,59 @@
+<?php
+
+/**
+ * @file
+ * Here we are importing lac data from csv.
+ */
+
+use Drupal\cntry_ste_dst_la_lb_wrd\Entity\LacList;
+
+/**
+ * Implements hook_install().
+ */
+function csd_lac_data_install() {
+  $module_handler = \Drupal::service('module_handler');
+  $module_path = $module_handler->getModule('csd_lac_data')->getPath();
+  // Importando os dados dos paises.
+  $array = $fields = [];
+  $i = 0;
+  $handle = @fopen($module_path . '/lac.csv', "r");
+  if ($handle) {
+    while (($row = fgetcsv($handle, 4096)) !== FALSE) {
+      if (empty($fields)) {
+        $fields = $row;
+        continue;
+      }
+      foreach ($row as $k => $value) {
+        $array[$i][$fields[$k]] = $value;
+      }
+      $i++;
+    }
+    if (!feof($handle)) {
+      echo "Error: unexpected fgets() fail\n";
+    }
+    fclose($handle);
+  }
+
+  // Criando um registro na entidade country para cada pais importado.
+  if (is_array($array) && count($array) > 0) {
+    foreach ($array as $lac) {
+      $new_lac = LacList::create([
+        'id' => $lac['id'],
+        'name' => $lac['name'],
+        'district_id' => $lac['district_id'],
+      ]);
+      $new_lac->save();
+    }
+  }
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+//function csd_lac_data_uninstall() {
+//  $current_contact_message = \Drupal::entityTypeManager()->getDefinition('lacList');
+//  $entity_definition_update_manager = \Drupal::entityDefinitionUpdateManager();
+//  $original_contact_message = $entity_definition_update_manager->getEntityType('lacList');
+//  $entity_definition_update_manager->uninstallEntityType($current_contact_message);
+//  $entity_definition_update_manager->installEntityType($original_contact_message);
+//}
