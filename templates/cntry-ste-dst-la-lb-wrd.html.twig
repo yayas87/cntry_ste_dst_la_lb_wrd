@@ -1,0 +1,42 @@
+{#
+/**
+ * @file
+ * Default template for the 'plain' country state field formatter.
+ *
+ * Available variables:
+ *   - country
+ *   - state
+ *   - district
+ *   - lac
+ *   - localbody
+ *   - ward
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="country-state-country" translate="no">
+  {% if country %}
+    {{ country }},
+  {% endif %}
+
+  {% if state %}
+    {{ state }}
+  {% endif %}
+
+  {% if district %}
+    ,{{ district }}
+  {% endif %}
+
+  {% if lac %}
+    ,{{ lac }}
+  {% endif %}
+  
+  {% if localbody %}
+    ,{{ localbody }}
+  {% endif %}
+  
+  {% if ward %}
+    ,{{ ward }}
+  {% endif %}
+</div>
+<!-- Add you custom twig html here -->

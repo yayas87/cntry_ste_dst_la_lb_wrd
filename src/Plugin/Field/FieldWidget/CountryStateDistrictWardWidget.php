@@ -333,7 +333,6 @@ class CountryStateDistrictWardWidget extends WidgetBase implements ContainerFact
       ];
     }
 
-
     if ($state_id) {
       $element['district'] = [
         '#type' => 'select',

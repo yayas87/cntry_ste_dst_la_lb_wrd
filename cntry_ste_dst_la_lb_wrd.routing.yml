@@ -262,4 +262,3 @@ entity.wardlist.delete_form:
      _entity_access: 'wardlist.delete'
 
  # End ward list data start.
-
