@@ -1,0 +1,59 @@
+#Country List
+'delete countrylist entity':
+  title: Delete entity content countrylist
+'add countrylist entity':
+  title: Add entity content countrylist
+'view countrylist entity':
+  title: View entity content countrylist
+'edit countrylist entity':
+  title: Edit entity content countrylist
+
+#State List
+'delete statelist entity':
+  title: Delete entity content statelist
+'add statelist entity':
+  title: Add entity content statelist
+'view statelist entity':
+  title: View entity content statelist
+'edit statelist entity':
+  title: Edit entity content statelist
+
+#District List
+'delete districtlist entity':
+  title: Delete entity content districtlist
+'add districtlist entity':
+  title: Add entity content districtlist
+'view districtlist entity':
+  title: View entity content districtlist
+'edit districtlist entity':
+  title: Edit entity content districtlist
+
+#Legislative Assembly List
+'delete laclist entity':
+  title: Delete entity content lac
+'add laclist entity':
+  title: Add entity content lac
+'view laclist entity':
+  title: View entity content lac
+'edit laclist entity':
+  title: Edit entity content lac
+
+#Local body List
+'delete localbody entity':
+  title: Delete entity content localbody
+'add localbody entity':
+  title: Add entity content localbody
+'view localbody entity':
+  title: View entity content localbody
+'edit localbody entity':
+  title: Edit entity content localbody
+
+#Ward List
+'delete ward entity':
+  title: Delete entity content ward
+'add ward entity':
+  title: Add entity content ward
+'view ward entity':
+  title: View entity content ward
+'edit ward entity':
+  title: Edit entity content ward

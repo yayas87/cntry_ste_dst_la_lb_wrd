@@ -1,0 +1,41 @@
+countrylist.country_add:
+  route_name: countrylist.country_add
+  title: 'Add Country'
+  appears_on:
+    - entity.countrylist.collection
+    - entity.countrylist.canonical
+
+statelist.country_add:
+  route_name: statelist.state_add
+  title: 'Add State'
+  appears_on:
+    - entity.statelist.collection
+    - entity.statelist.canonical
+
+districtlist.district_add:
+  route_name: districtlist.district_add
+  title: 'Add District'
+  appears_on:
+    - entity.districtlist.collection
+    - entity.districtlist.canonical
+
+laclist.lac_add:
+  route_name: laclist.lac_add
+  title: 'Add LAC'
+  appears_on:
+    - entity.laclist.collection
+    - entity.laclist.canonical
+
+localbodylist.lac_add:
+  route_name: localbodylist.localbody_add
+  title: 'Add Local Body'
+  appears_on:
+    - entity.localbodylist.collection
+    - entity.localbodylist.canonical
+
+wardlist.ward_add:
+  route_name: wardlist.ward_add
+  title: 'Add Ward'
+  appears_on:
+    - entity.wardlist.collection
+    - entity.wardlist.canonical

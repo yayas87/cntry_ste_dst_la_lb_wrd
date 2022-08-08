@@ -1,0 +1,131 @@
+# Country Details
+country.settings_tab:
+  route_name: entity.countrylist.edit_form
+  title: Settings
+  base_route: entity.countrylist.edit_form
+
+country.view:
+  route_name: entity.countrylist.canonical
+  base_route: entity.countrylist.canonical
+  title: View
+
+country.page_edit:
+  route_name: entity.countrylist.edit_form
+  base_route: entity.countrylist.canonical
+  title: Edit
+
+country.delete_confirm:
+  route_name:  entity.countrylist.delete_form
+  base_route:  entity.countrylist.canonical
+  title: Delete
+  weight: 10
+
+#State Details
+state.settings_tab:
+  route_name: entity.statelist.edit_form
+  title: Settings
+  base_route: entity.statelist.edit_form
+
+state.view:
+  route_name: entity.statelist.canonical
+  base_route: entity.statelist.canonical
+  title: View
+
+state.page_edit:
+  route_name: entity.statelist.edit_form
+  base_route: entity.statelist.canonical
+  title: Edit
+
+state.delete_confirm:
+  route_name:  entity.statelist.delete_form
+  base_route:  entity.statelist.canonical
+  title: Delete
+  weight: 10
+
+#District Details
+district.settings_tab:
+  route_name: entity.districtlist.edit_form
+  title: Settings
+  base_route: entity.districtlist.edit_form
+
+district.view:
+  route_name: entity.districtlist.canonical
+  base_route: entity.districtlist.canonical
+  title: View
+
+district.page_edit:
+  route_name: entity.districtlist.edit_form
+  base_route: entity.districtlist.canonical
+  title: Edit
+
+district.delete_confirm:
+  route_name:  entity.districtlist.delete_form
+  base_route:  entity.districtlist.canonical
+  title: Delete
+  weight: 10
+
+#Legislative Assembly Details
+lac.settings_tab:
+  route_name: entity.laclist.edit_form
+  title: Settings
+  base_route: entity.laclist.edit_form
+
+lac.view:
+  route_name: entity.laclist.canonical
+  base_route: entity.laclist.canonical
+  title: View
+
+lac.page_edit:
+  route_name: entity.laclist.edit_form
+  base_route: entity.laclist.canonical
+  title: Edit
+
+lac.delete_confirm:
+  route_name:  entity.laclist.delete_form
+  base_route:  entity.laclist.canonical
+  title: Delete
+  weight: 10
+
+ #Localbody Details
+localbody.settings_tab:
+   route_name: entity.localbody.edit_form
+   title: Settings
+   base_route: entity.localbody.edit_form
+
+localbody.view:
+   route_name: entity.localbody.canonical
+   base_route: entity.localbody.canonical
+   title: View
+
+localbody.page_edit:
+   route_name: entity.localbody.edit_form
+   base_route: entity.localbody.canonical
+   title: Edit
+
+localbody.delete_confirm:
+   route_name:  entity.localbody.delete_form
+   base_route:  entity.localbody.canonical
+   title: Delete
+   weight: 10
+
+  #Ward Details
+ward.settings_tab:
+   route_name: entity.ward.edit_form
+   title: Settings
+   base_route: entity.ward.edit_form
+
+ward.view:
+   route_name: entity.ward.canonical
+   base_route: entity.ward.canonical
+   title: View
+
+ward.page_edit:
+   route_name: entity.ward.edit_form
+   base_route: entity.ward.canonical
+   title: Edit
+
+ward.delete_confirm:
+   route_name:  entity.ward.delete_form
+   base_route:  entity.ward.canonical
+   title: Delete
+   weight: 10

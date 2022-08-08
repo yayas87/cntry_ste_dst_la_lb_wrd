@@ -1,0 +1,6 @@
+name: Country State District Field
+type: module
+description: 'The country, state, district, legislative assembly, local-body, ward field.'
+package: AAP
+core_version_requirement: ^9 || ^10
+configure: country_state_district.csd_interface

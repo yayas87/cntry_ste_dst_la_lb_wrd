@@ -1,0 +1,265 @@
+
+cntry_ste_dst_la_lb_wrd.csd_interface:
+  path: '/admin/structure/csd-modes'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Country state district  Interface'
+  requirements:
+    _permission: 'administer site configuration'
+
+# Country list data start.
+entity.countrylist.canonical:
+  path: '/countrylist/{countrylist}'
+  defaults:
+    _entity_view: 'countrylist'
+    _title: 'Country content'
+  requirements:
+    _entity_access: 'countrylist.view'
+
+entity.countrylist.collection:
+  path: '/admin/structure/csd-modes/countrylist'
+  defaults:
+    _entity_list: 'countrylist'
+    _title: 'Country list'
+  requirements:
+    _permission: 'view countrylist entity'
+
+countrylist.country_add:
+  path: '/admin/structure/csd-modes/countrylist/add'
+  defaults:
+    _entity_form: countrylist.default
+    _title: 'Add countrylist'
+  requirements:
+    _entity_create_access: 'countrylist'
+
+entity.countrylist.edit_form:
+  path: '/admin/structure/csd-modes/countrylist/{countrylist}/edit'
+  defaults:
+    _entity_form: countrylist.default
+    _title: 'Edit countrylist'
+  requirements:
+    _entity_access: 'countrylist.update'
+
+entity.countrylist.delete_form:
+  path: '/admin/structure/csd-modes/countrylist/{countrylist}/delete'
+  defaults:
+    _entity_form: countrylist.delete
+    _title: 'Delete countrylist'
+  requirements:
+    _entity_access: 'countrylist.delete'
+
+# End country list data start.
+
+# State list data start.
+entity.statelist.canonical:
+  path: '/statelist/{statelist}'
+  defaults:
+    _entity_view: 'statelist'
+    _title: 'State content'
+  requirements:
+    _entity_access: 'statelist.view'
+
+entity.statelist.collection:
+  path: '/admin/structure/csd-modes/statelist'
+  defaults:
+    _entity_list: 'statelist'
+    _title: 'State list'
+  requirements:
+    _permission: 'view statelist entity'
+
+statelist.state_add:
+  path: '/admin/structure/csd-modes/statelist/add'
+  defaults:
+    _entity_form: statelist.default
+    _title: 'Add statelist'
+  requirements:
+    _entity_create_access: 'statelist'
+
+entity.statelist.edit_form:
+  path: '/admin/structure/csd-modes/statelist/{statelist}/edit'
+  defaults:
+    _entity_form: statelist.default
+    _title: 'Edit statelist'
+  requirements:
+    _entity_access: 'statelist.update'
+
+entity.statelist.delete_form:
+  path: '/admin/structure/csd-modes/statelist/{statelist}/delete'
+  defaults:
+    _entity_form: statelist.delete
+    _title: 'Delete statelist'
+  requirements:
+    _entity_access: 'statelist.delete'
+
+# End state list data start.
+
+# District list data start.
+entity.districtlist.canonical:
+  path: '/districtlist/{districtlist}'
+  defaults:
+    _entity_view: 'districtlist'
+    _title: 'District content'
+  requirements:
+    _entity_access: 'districtlist.view'
+
+entity.districtlist.collection:
+  path: '/admin/structure/csd-modes/districtlist'
+  defaults:
+    _entity_list: 'districtlist'
+    _title: 'District list'
+  requirements:
+    _permission: 'view districtlist entity'
+
+districtlist.district_add:
+  path: '/admin/structure/csd-modes/districtlist/add'
+  defaults:
+    _entity_form: districtlist.default
+    _title: 'Add districtlist'
+  requirements:
+    _entity_create_access: 'districtlist'
+
+entity.districtlist.edit_form:
+  path: '/admin/structure/csd-modes/districtlist/{districtlist}/edit'
+  defaults:
+    _entity_form: districtlist.default
+    _title: 'Edit districtlist'
+  requirements:
+    _entity_access: 'districtlist.update'
+
+entity.districtlist.delete_form:
+  path: '/admin/structure/csd-modes/districtlist/{districtlist}/delete'
+  defaults:
+    _entity_form: districtlist.delete
+    _title: 'Delete districtlist'
+  requirements:
+    _entity_access: 'districtlist.delete'
+# District list data ends.
+
+# Legislative Assembly list data start.
+entity.laclist.canonical:
+  path: '/laclist/{lac}'
+  defaults:
+    _entity_view: 'laclist'
+    _title: 'lac content'
+  requirements:
+    _entity_access: 'laclist.view'
+
+entity.laclist.collection:
+  path: '/admin/structure/csd-modes/laclist'
+  defaults:
+    _entity_list: 'laclist'
+    _title: 'legislative assembly list'
+  requirements:
+    _permission: 'view lac entity'
+
+laclist.lac_add:
+  path: '/admin/structure/csd-modes/laclist/add'
+  defaults:
+    _entity_form: laclist.default
+    _title: 'Add legislative assembly list'
+  requirements:
+    _entity_create_access: 'laclist'
+
+entity.laclist.edit_form:
+  path: '/admin/structure/csd-modes/lac/{laclist}/edit'
+  defaults:
+    _entity_form: laclist.default
+    _title: 'Edit lac'
+  requirements:
+    _entity_access: 'laclist.update'
+
+entity.laclist.delete_form:
+  path: '/admin/structure/csd-modes/lac/{laclist}/delete'
+  defaults:
+    _entity_form: laclist.delete
+    _title: 'Delete lac'
+  requirements:
+    _entity_access: 'laclist.delete'
+# lac list data ends.
+
+# Localbody list data start.
+entity.localbodylist.canonical:
+   path: '/localbodylist/{localbodylist}'
+   defaults:
+     _entity_view: 'localbodylist'
+     _title: 'Localbody content'
+   requirements:
+     _entity_access: 'localbodylist.view'
+
+entity.localbodylist.collection:
+   path: '/admin/structure/csd-modes/localbodylist'
+   defaults:
+     _entity_list: 'localbodylist'
+     _title: 'Localbody list'
+   requirements:
+     _permission: 'view localbodylist entity'
+
+localbodylist.localbody_add:
+   path: '/admin/structure/csd-modes/localbodylist/add'
+   defaults:
+     _entity_form: localbodylist.default
+     _title: 'Add localbodylist'
+   requirements:
+     _entity_create_access: 'localbodylist'
+
+entity.localbodylist.edit_form:
+   path: '/admin/structure/csd-modes/localbodylist/{localbodylist}/edit'
+   defaults:
+     _entity_form: localbodylist.default
+     _title: 'Edit localbodylist'
+   requirements:
+     _entity_access: 'localbodylist.update'
+
+entity.localbodylist.delete_form:
+   path: '/admin/structure/csd-modes/localbodylist/{localbodylist}/delete'
+   defaults:
+     _entity_form: localbodylist.delete
+     _title: 'Delete localbodylist'
+   requirements:
+     _entity_access: 'localbodylist.delete'
+
+ # End Localbody list data start.
+
+# ward list data start.
+entity.wardlist.canonical:
+   path: '/wardlist/{wardlist}'
+   defaults:
+     _entity_view: 'wardlist'
+     _title: 'wardlist content'
+   requirements:
+     _entity_access: 'wardlist.view'
+
+entity.wardlist.collection:
+   path: '/admin/structure/csd-modes/wardlist'
+   defaults:
+     _entity_list: 'wardlist'
+     _title: 'ward list'
+   requirements:
+     _permission: 'view wardlist entity'
+
+wardlist.ward_add:
+   path: '/admin/structure/csd-modes/wardlist/add'
+   defaults:
+     _entity_form: wardlist.default
+     _title: 'Add ward'
+   requirements:
+     _entity_create_access: 'wardlist'
+
+entity.wardlist.edit_form:
+   path: '/admin/structure/csd-modes/wardlist/{wardlist}/edit'
+   defaults:
+     _entity_form: wardlist.default
+     _title: 'Edit ward list'
+   requirements:
+     _entity_access: 'wardlist.update'
+
+entity.wardlist.delete_form:
+   path: '/admin/structure/csd-modes/wardlist/{wardlist}/delete'
+   defaults:
+     _entity_form: wardlist.delete
+     _title: 'Delete wardlist'
+   requirements:
+     _entity_access: 'wardlist.delete'
+
+ # End ward list data start.
+

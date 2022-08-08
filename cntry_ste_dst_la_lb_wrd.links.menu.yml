@@ -1,0 +1,47 @@
+cntry_ste_dst_la_lb_wrd.csd_interface:
+  title: 'Country state to ward  Interface'
+  description: 'Allows admin user to check list of country, state, district legislative assemply, localbody and ward.'
+  parent: system.admin_structure
+  route_name: cntry_ste_dst_la_lb_wrd.csd_interface
+
+cntry_ste_dst_la_lb_wrd.countrylist_interface:
+  title: 'Country list'
+  description: 'List of country data.'
+  parent: cntry_ste_dst_la_lb_wrd.csd_interface
+  route_name: entity.countrylist.collection
+  weight: 10
+
+cntry_ste_dst_la_lb_wrd.statelist_interface:
+  title: 'State list'
+  description: 'List of state data.'
+  parent: cntry_ste_dst_la_lb_wrd.csd_interface
+  route_name: entity.statelist.collection
+  weight: 11
+
+cntry_ste_dst_la_lb_wrd.districtlist_interface:
+  title: 'District list'
+  description: 'List of district data.'
+  parent: cntry_ste_dst_la_lb_wrd.csd_interface
+  route_name: entity.districtlist.collection
+  weight: 12
+
+cntry_ste_dst_la_lb_wrd.laclist_interface:
+  title: 'LAC list'
+  description: 'List of Legislative Assembly data.'
+  parent: cntry_ste_dst_la_lb_wrd.csd_interface
+  route_name: entity.laclist.collection
+  weight: 13
+
+cntry_ste_dst_la_lb_wrd.localbodylist_interface:
+  title: 'Local body list'
+  description: 'List of local body data.'
+  parent: cntry_ste_dst_la_lb_wrd.csd_interface
+  route_name: entity.localbodylist.collection
+  weight: 14
+
+cntry_ste_dst_la_lb_wrd.wardlist_interface:
+  title: 'Ward list'
+  description: 'List of ward data.'
+  parent: cntry_ste_dst_la_lb_wrd.csd_interface
+  route_name: entity.wardlist.collection
+  weight: 15
