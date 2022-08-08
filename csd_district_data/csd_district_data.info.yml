@@ -1,0 +1,9 @@
+name: CSD 03 District Data
+type: module
+description: 'Import district data.'
+package: AAP
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - cntry_ste_dst_la_lb_wrd
+  - cntry_ste_dst_la_lb_wrd:csd_state_data
