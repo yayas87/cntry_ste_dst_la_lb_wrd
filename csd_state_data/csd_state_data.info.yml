@@ -1,0 +1,9 @@
+name: CSD 02 State Data
+type: module
+description: 'Import state data.'
+package: AAP
+core: 8.x
+core_version_requirement: ^8 || ^9
+dependencies:
+  - cntry_ste_dst_la_lb_wrd
+  - cntry_ste_dst_la_lb_wrd:csd_country_data
